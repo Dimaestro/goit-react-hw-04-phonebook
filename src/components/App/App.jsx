@@ -6,11 +6,10 @@ import Filter from 'components/Filter';
 import ContactList from 'components/ContactList';
 
 const App = () => {
-
   const [contacts, setContacts] = useState(() => (
     JSON.parse(localStorage.getItem('contacts')) ?? ''
   ));
-  
+
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
