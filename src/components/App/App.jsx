@@ -33,7 +33,7 @@ const App = () => {
   }
 
   const deleteContact = (id) => {
-    setContacts(contacts.filter(contact => id !== contact.id))
+    setContacts(prev => prev.filter(contact => id !== contact.id))
   }
 
   const handleChange = (event) => {
